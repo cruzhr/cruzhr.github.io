@@ -42,8 +42,15 @@ header {
 }
 
 .company-name {
-    position: absolute;
+    position: relative;
     background-color: salmon;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.motto {
+    position: relative;
+    background-color: orange;
     padding: 2%;
     border-radius: 10px;
 }
