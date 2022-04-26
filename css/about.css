@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* font-family: 'Commissioner', sans-serif;
+    font-family: 'Fraunces', serif; */
+
+
+body {
+    display: grid;
+    grid-template-rows: auto, auto, auto, auto;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "intro"
+        "contact";
+    font-family: 'Commissioner', sans-serif;
+}
+
+.banner {
+    height: 700px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/pass.jpg");
+    background-size: cover;
+    background-position: right 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10%;
+}
+
+/* .info {
+    gap: 1rem;
+    margin: 5% 15% 5% 15%;
+} */
+
+.info {
+    gap: 5%;
+    margin: 7%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #283618;
+    padding: 15px;
+    width: auto;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.more-info {
+    font-size: medium;
+    padding-bottom: 15px;
+}
+
+.extra {
+    background-color: #FEFAE0;
+    text-align: center;
+}
+
+.vertical-line {
+    width: 7px;
+    height: 50%;
+    background-color: #283618;
+    border-radius: 5px;
+}
+
+
+/* for desktop */
+/* .vertical-line {
+    width: 7px;
+    height: 100%;
+    background-color: #283618;
+    border-radius: 5px;
+} */
+
+
+
+/* for mobile view */
+
+/* .ham {
+    align-self: flex-end;
+    padding-right: 10px;
+}
+
+.hamburger {
+    display: block;
+    height: 5px;
+    width: 30px;
+    margin: 5px;
+    background: black;
+    border-radius: 5px;
+} */
+
+/* for desktop */
+@media only screen and (min-width: 768px) {
+    .info {
+        gap: 1rem;
+        margin: 5% 15% 5% 15%;
+    }
+
+    .vertical-line {
+        width: 7px;
+        height: 100%;
+        background-color: #283618;
+        border-radius: 5px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+}
