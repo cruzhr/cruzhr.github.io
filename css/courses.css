@@ -9,6 +9,7 @@ main {
     flex-direction: column;
 }
 
+
 .banner {
     height: 700px;
     overflow: hidden;
@@ -22,6 +23,8 @@ main {
     align-items: start;
     padding: 10%;
 }
+
+
 
 .dropbtn {
     background-color: #283618;

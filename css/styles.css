@@ -69,8 +69,10 @@ header {
     color: white;
 }
 
-.thumbnail img {
+.thumbnail img,
+.type img {
     object-fit: cover;
+    min-width: 200px;
 }
 
 
