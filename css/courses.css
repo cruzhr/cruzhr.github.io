@@ -9,6 +9,45 @@ main {
     flex-direction: column;
 }
 
+.thumbnail img {
+    border-radius: 15px;
+}
+
+.across {
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+}
+
+.card-body>.btn {
+    background-color: black;
+    border: black;
+}
+
+.card-body>.btn:hover,
+.card-body>.btn:focus {
+    background-color: #606c38;
+    border: #606c38;
+}
+
+.classroom img {
+    object-fit: cover;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .description {
+        padding-right: 6rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .offerings {
+        padding-left: 3rem;
+    }
+
+}
+
 
 .banner {
     height: 700px;
