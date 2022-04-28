@@ -9,6 +9,10 @@ main {
     flex-direction: column;
 }
 
+.card-header h2 {
+    font-size: 1.25rem;
+}
+
 .thumbnail img {
     border-radius: 15px;
 }
@@ -22,6 +26,7 @@ main {
 .card-body>.btn {
     background-color: black;
     border: black;
+    transition: all 400ms ease-out;
 }
 
 .card-body>.btn:hover,
@@ -48,7 +53,6 @@ main {
 
 }
 
-
 .banner {
     height: 700px;
     overflow: hidden;
@@ -62,8 +66,6 @@ main {
     align-items: start;
     padding: 10%;
 }
-
-
 
 .dropbtn {
     background-color: #283618;

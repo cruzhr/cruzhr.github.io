@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- <video preload="none" playsinline="true"
-    src="https://video.wixstatic.com/video/a32230_f22a3c22c0114c769e4f0af371b191f0/720p/mp4/file.mp4"></video> -->
 
 <!-- add alt tags to images + aria labels! 
 add hover + focus states-->
@@ -24,28 +22,18 @@ add hover + focus states-->
 
 <body>
     <header>
-        <nav>
-            <!-- <div class="brand d-flex gap-3">
-                <i class="bi bi-book icon text-white"></i>
-                <h1 class="text-white logo">St. Bernard</h1>
-            </div> -->
+        <nav aria-label="Primary Navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="courses.html">Courses</a>
-            <!-- for mobile view -->
-            <div class="ham">
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-            </div>
         </nav>
         <div class="banner">
             <h1 class="company-name">St. Bernard English School</h1>
             <h2 class="motto">Your Path to the World.</h2>
         </div>
-        <div class="d-flex justify-content-center align-items-center check-it-out gap-3 p-3">
-            <p class="pt-3">Check out our course offerings!</p>
-            <a href="courses.html" class="action">Enroll Now</a>
+        <div class="d-flex justify-content-center align-items-center check-it-out gap-3 pe-3 pt-3 pb-3">
+            <p class="ms-3 mt-3">Check out our course offerings!</p>
+            <a href="courses.html" class="action" role="button">Enroll Now</a>
         </div>
     </header>
 
@@ -55,26 +43,18 @@ add hover + focus states-->
             <div class="horiz-line"></div>
             <div class="vert-line ms-5"></div>
             <p class="p-5">Saint Bernard English School is an innovative language school located at the heart of
-                Minoh-Shinmachi,
-                Osaka. Here at Saint Bernard, we seek to emphasize not only quality teaching, but also a more
-                personalized approach in English education. We strive to create a need-based learning experience for
-                each of our students.
-
-                Just like our inspiration, the Great Saint Bernard Pass in Switzerland, let us guide you through your
-                path to the World.</p>
+                Minoh-Shinmachi,Osaka. Here at Saint Bernard, we seek to emphasize not only <b
+                    class="bolded">quality</b> teaching, but also a more <b class="bolded">personalized</b> approach in
+                English education. We strive to create a need-based learning experience for
+                each of our students. Just like our inspiration, the Great Saint Bernard Pass in Switzerland, let us
+                guide you through your
+                path to the world.</p>
         </div>
-        <!-- <div class="d-flex justify-content-center align-items-center">
-            <video poster="/images/blocks.jpg" controls preload="none" playsinline="true">
-                <source
-                    src="https://video.wixstatic.com/video/a32230_f22a3c22c0114c769e4f0af371b191f0/720p/mp4/file.mp4">
-            </video> -->
-        <!-- <video poster="/images/classroom.jpg" controls preload="none" playsinline="true"
-                    src="https://video.wixstatic.com/video/a32230_7d273bf96afb4cf49850ad22821dc914/720p/mp4/file.mp4"></video> -->
-        <!-- <h1>A Message from Our Ambassadors</h1>
-        </div> -->
+
         <div class="features switch d-flex flex-column intro mh-100">
             <div class="thumbnail">
-                <img src="/images/backpacks.jpg" class="thumb mw-100 rounded">
+                <img src="/images/backpacks.jpg" alt="kids walking away with colorful backpacks"
+                    class="thumb mw-100 rounded">
             </div>
             <div class="description d-flex flex-column">
                 <h1 class="pb-3">School Features</h1>
@@ -93,7 +73,7 @@ add hover + focus states-->
                     <i class="bi bi-gear icon"></i>
                     <p class="">本校では英語力に加えて、コミュニケーション能力やプレゼンなど、英語を「実践的に」使えるようになるスキルの教育にも力を入れています。</p>
                 </div>
-                <div class="meet"><a href="courses.html#teacher">Meet the Teacher</a></div>
+                <div class="meet"><a href="courses.html#teacher" role="button">Meet the Teacher</a></div>
             </div>
         </div>
 
@@ -107,7 +87,8 @@ add hover + focus states-->
                 language is my deepest passion. And this passion translates itself in my personalized touch in handling
                 the lessons and the students themselves.
 
-                I believe that mistake is the twin sister of success. Everybody makes mistakes but not every one can
+            </p>
+            <p>I believe that mistake is the twin sister of success. Everybody makes mistakes but not every one can
                 succeed from it. Never say “I give up”, for giving up should never be an option.
 
                 So take up that challenge: Learning English, living it, loving it!
@@ -119,75 +100,12 @@ add hover + focus states-->
                 That’s ELLEN for sure!</p>
         </div>
 
-        <div class="type px-5 d-flex gap-4 flex-column switch bg">
-            <!-- <img
-                src="https://static.wixstatic.com/media/a32230_05f2804698b4457caf8be1be7e4812de~mv2.jpg/v1/fill/w_258,h_345,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Hannah%20Photo.jpg"> -->
-
-            <!-- <div class="map"> -->
-            <!-- <i class="bi bi-person-fill icon"></i> -->
-            <!-- <h1 class=""><i class="bi bi-person-fill icon pe-3"></i>Directions</h1>
-                <div class=" directions pt-2 d-flex flex-column switch info">
-                    <img class="cover"
-                        src="https://static.wixstatic.com/media/a32230_e42b678782b34502b51d8aa5c1c1cb73~mv2.png/v1/fill/w_318,h_306,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Saint%20Bernard%20Map.png">
-                    <!-- <div class="d-flex flex-column p-2"> -->
-            <!-- <h2>Address</h2>
-            <p class="">
-                〒563-0257
-                2-28-27 Shinmachi-naka, Minoh-shi, Osaka, Japan
-                大阪府箕面市森町中2-28-27</p>
-            <h2>Parking</h2>
-            <p>Please feel free to use the parking available on the side of the school.</p>
-        </div>  -->
-            <!-- <img
-                            src="https://static.wixstatic.com/media/a32230_f7731daa6d0d49659c0be371a25c20e5~mv2.jpg/v1/crop/x_0,y_7,w_1523,h_2035/fill/w_234,h_314,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Parking%20Lot.jpg">-->
-            <!-- </div>
-            </div>
-            <div class="send"> -->
-
-            <!-- <i class="bi bi-people-fill icon"></i> -->
-            <!-- <h1 class=""><i class="bi bi-people-fill icon pe-3"></i>Get In Touch</h1>
-                <div class="contact-form">
-                    <form method="get" action="/">
-                        <div class="message">
-                            <h2>Send us a message!</h2>
-                        </div>
-
-                        <div class="your-name">
-                            <label for="name">Name</label>
-                            <div class="name-value">
-                                <input type="text" id="name" name="user_name" placeholder="your name" value="" required>
-                            </div>
-                        </div>
-
-                        <div class="your-email">
-                            <label for="email">Email</label>
-                            <div class="email-value">
-                                <input type="email" id="email" name="user_email" placeholder="email@domain.com" value=""
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="your-message">
-                            <label for="message">Message</label>
-                            <div class="message-value">
-                                <input type="text" id="message" name="message" placeholder="type your message" value=""
-                                    required>
-                            </div>
-                        </div>
-
-                        <button class="submit" type="submit"><strong>SUBMIT</strong></button>
-
-                    </form>
-                </div>
-            </div>
-        </div> -->
-
     </main>
 
-    <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+    <!--footer modified from: https://mdbootstrap.com/docs/standard/navigation/footer/ -->
     <footer class="text-center text-white" style="background-color: #283618;">
         <div class="container pt-4 pb-3">
-            <section class="">
+            <div>
                 <p class="m-1">〒563-0257
                     2-28-27 Shinmachi-naka, Minoh-shi, Osaka, Japan
                     ​
@@ -199,7 +117,7 @@ add hover + focus states-->
                     href="https://www.stbernardenglish.com/contact-us" role="button" data-mdb-ripple-color="dark"><i
                         class="bi bi-telephone"></i>
                 </a>
-            </section>
+            </div>
         </div>
 
         <!-- Copyright -->

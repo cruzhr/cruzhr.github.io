@@ -9,16 +9,20 @@
     font-family: 'Fraunces', serif; */
 
 
-
 body {
     display: grid;
-    grid-template-rows: auto, auto, auto, auto;
     grid-template-areas:
         "navbar"
         "header"
         "intro"
         "contact";
     font-family: 'Commissioner', sans-serif;
+}
+
+main {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -54,6 +58,10 @@ header {
     padding: 10%;
 }
 
+.bolded {
+    color: #283618;
+}
+
 .letter {
     max-width: 1000px;
     border-radius: 15px;
@@ -62,57 +70,6 @@ header {
 .cover {
     width: fit-content;
 }
-
-.directions {
-    padding: 50px;
-
-}
-
-
-.contact-form {
-    grid-area: form;
-    background-color: rgb(248, 248, 248);
-    padding: 0 20px 20px;
-    /* margin: auto; */
-    /* margin: 5% 2% 0 2%; */
-    border: 1.5px solid #d6d6d6;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    /* height: 325px; */
-    justify-content: space-around;
-}
-
-input {
-    width: 100%;
-}
-
-
-.submit {
-    font-family: sofia-pro-soft, sans-serif;
-    text-align: center;
-    width: 100%;
-    padding: 15px;
-    border: transparent;
-    border-radius: 5px;
-    background-image: linear-gradient(to right, #4DCCBD 33%, #2374AB);
-    background-size: 100% auto;
-    background-position: 100% 0;
-    transition: all 0.75s ease-in-out;
-}
-
-.submit:hover {
-    color: white;
-    background-size: 600% auto;
-    background-position: 100% 0;
-}
-
-.message-value input {
-    padding: 0 25px 25px 0;
-}
-
 
 .features {
     padding: 3rem 4rem;
@@ -126,11 +83,17 @@ input {
     max-width: fit-content;
     padding: 1rem;
     border-radius: 10px;
+    transition: all 400ms ease-out;
 }
 
 .meet a {
     text-decoration: none;
     color: white;
+}
+
+.meet:hover,
+.meet:focus {
+    background-color: #606c38;
 }
 
 .thumbnail {
@@ -148,10 +111,6 @@ input {
     font-size: 2rem;
 }
 
-/* img {
-    object-fit: cover;
-    opacity: 0.4;
-} */
 
 .company-name {
     color: white;
@@ -169,6 +128,7 @@ input {
 .check-it-out {
     background-color: #283618;
     color: white;
+    text-align: center;
 }
 
 .action {
@@ -177,6 +137,13 @@ input {
     border-radius: 5px;
     color: white;
     padding: 0.5rem 1rem;
+    transition: all 400ms ease-out;
+}
+
+.action:hover,
+.action:focus {
+    background-color: #FEFAE0;
+    color: black;
 }
 
 .who-we-are {
@@ -193,10 +160,6 @@ input {
     height: 0.1rem;
     background-color: #283618;
     border-radius: 5px;
-}
-
-video {
-    max-width: 50%;
 }
 
 @media only screen and (min-width: 992px) {
@@ -239,12 +202,6 @@ video {
 
 }
 
-main {
-    grid-area: intro;
-    display: flex;
-    flex-direction: column;
-}
-
 .logo {
     font-family: 'Commissioner', sans-serif;
     font-size: 2rem;
@@ -277,34 +234,18 @@ nav a:after {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: #FEFAE0;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
 
-nav a:hover {
-    color: white;
+nav a:hover,
+nav a:focus {
+    color: #FEFAE0;
 }
 
+nav a:hover:after,
 nav a:hover:after {
     width: 100%;
     left: 0;
 }
-
-
-
-/* for mobile view */
-
-/* .ham {
-    align-self: flex-end;
-    padding-right: 10px;
-}
-
-.hamburger {
-    display: block;
-    height: 5px;
-    width: 30px;
-    margin: 5px;
-    background: black;
-    border-radius: 5px;
-} */
